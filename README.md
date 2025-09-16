@@ -271,8 +271,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 **Your Name**  
 Appalanaidu Bagana
 
-- GitHub: [@yourusername](https://github.com/NaiduBagana)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/naidu-bagana)
+- GitHub: [@NaiduBagana](https://github.com/NaiduBagana)
+- LinkedIn: [NaiduBagana](https://linkedin.com/in/naidu-bagana)
 
 ---
 
