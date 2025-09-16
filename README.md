@@ -268,8 +268,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 👨‍💻 Author
 
-**Your Name**  
-Appalanaidu Bagana
+**Appalanaidu Bagana**  
+
 
 - GitHub: [@NaiduBagana](https://github.com/NaiduBagana)
 - LinkedIn: [NaiduBagana](https://linkedin.com/in/naidu-bagana)
