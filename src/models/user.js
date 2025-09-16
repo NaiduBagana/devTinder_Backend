@@ -2,7 +2,8 @@ const mongoose = require("mongoose");
 const validator = require("validator");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
-if (process.env.NODE_ENV !== "production") require("dotenv").config();
+const { JWT_SECRET } = require("../utils/constants");
+// if (process.env.NODE_ENV !== "production") require("dotenv").config();
 const userSchema = new mongoose.Schema(
   {
     firstName: {
@@ -106,7 +107,7 @@ userSchema.methods.validatePassword = async function (password) {
   return isPasswordValid;
 };
 userSchema.methods.getJwtToken = function () {
-  return jwt.sign({ _id: this._id }, process.env.JWT_SECRET, {
+  return jwt.sign({ _id: this._id }, JWT_SECRET, {
     expiresIn: "7d",
   });
 };
