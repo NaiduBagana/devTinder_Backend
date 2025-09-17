@@ -2,13 +2,11 @@ const { validateSignupData } = require("../utils/validations");
 const jwt = require("jsonwebtoken");
 const { User } = require("../models/user");
 const bcrypt = require("bcrypt");
-const { JWT_SECRET } = require("../utils/constants");
-require("dotenv").config();
 const userAuth = async (req, res, next) => {
   const token = req.cookies.token;
   try {
-    // const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    const decoded = jwt.verify(token, JWT_SECRET);
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
     const { _id } = decoded;
     const user = await User.findById(_id);
 

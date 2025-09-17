@@ -6,8 +6,10 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const { connectDB } = require("./config/database");
 
+require("dotenv").config();
+
 const app = express();
-const port = 3001;
+const port = process.env.PORT;
 
 // Working CORS configuration (same as test server)
 const corsOptions = {
